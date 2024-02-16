@@ -1,2 +1,25 @@
 @charset "UTF-8";
 
+body {
+    background-color: black;
+}
+
+.calculadora {
+    background-color: white;
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+    max-width: 90%;
+    max-height: 90%;
+    padding: 5px;
+}
+
+div.calculadora div.buttons div.numbers{
+    background-color: lightblue;
+    padding: 10px;
+}
+
+div.calculadora div.buttons div.operations{
+    background-color: yellow;
+    padding: 10px;
+}
