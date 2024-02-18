@@ -5,33 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <title>Projeto Calculadora</title>
 </head>
 <body>
     <div class="calculadora">
-        <div class="display"></div>
+        <input type="text" id="display" name="display">
         <div class="buttons">
             <div class="numbers">
-                <button id="0">0</button>
-                <button id="1">1</button>
-                <button id="2">2</button>
-                <button id="3">3</button>
-                <button id="4">4</button>
-                <button id="5">5</button>
-                <button id="6">6</button>
+                <button id="parenteses-open">(</button>
+                <button id="paretenses-close">)</button>
+                <button id="restart">C</button>
+                <button id="paretenses-open">⌫</button>
+                <button id="percentual">%</button>
+                <button id="paretenses-close">x<sup>2</sup></button>
+                <button id="sqrt"><sup>2</sup>√</button>
+                <button id="divide">/</button>
                 <button id="7">7</button>
                 <button id="8">8</button>
                 <button id="9">9</button>
-            </div>
-            <div class="operations">
-                <button id="plus">+</button>
                 <button id="multiply">X</button>
-                <button id="divide">/</button>
+                <button id="4">4</button>
+                <button id="5">5</button>
+                <button id="6">6</button>
                 <button id="subtract">-</button>
-                <button id="decimal">,</button>
+                <button id="1">1</button>
+                <button id="2">2</button>
+                <button id="3">3</button>
+                <button id="plus">+</button>
                 <button id="sinal">+/-</button>
-                <button id="result">=</button>
-                <button id="restart">C</button>
+                <button id="0">0</button>
+                <button id="decimal">,</button>
+                <input type="submit" id="result" name="result" value="=">
             </div>
         </div>
     </div>
