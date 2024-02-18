@@ -27,7 +27,7 @@ body {
 input#display{
     width: 100%;
     background-color: white;
-    border: 1px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.315);
     margin-bottom: 5px;
     padding: 10px 0px;
     text-align: right;
@@ -39,8 +39,8 @@ input#display{
 div.buttons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    padding-bottom: 5px;
+    gap: 10px;
+    padding-bottom: 10px;
 }
 
 button, div.buttons > input {
@@ -52,7 +52,7 @@ button, div.buttons > input {
     font-size: 1.5em;
     font-family: "Montserrat";
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.315);
     border-radius: 10%;
     box-shadow: 1px 1px 3px 1px rgba(22, 22, 22, 0.205);
     padding: 10px;
@@ -60,4 +60,10 @@ button, div.buttons > input {
 
 button:hover , div.buttons > input:hover {
     background-color: #d8d8c0;
+    color: black;
+}
+
+button:active, div.buttons > input:active {
+    background-color: rgba(0, 0, 0, 0.589);
+    color: #e4e4e4;
 }
