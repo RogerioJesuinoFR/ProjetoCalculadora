@@ -18,22 +18,28 @@ body {
     position: relative;
     padding: 15px;
     text-align: center;
-    max-width: 60vw;
+    max-width: 62vw;
     max-height: 80vh;
     border-radius: 3%;
     box-shadow: 6px 6px 10px 5px rgba(22, 22, 22, 0.644);
 }
 
-input#display{
+section.area{
     width: 100%;
+}
+
+input#display{
+    grid-column: span 4;
+    max-width: 100%;
     background-color: white;
     border: 2px solid rgba(0, 0, 0, 0.315);
     margin-bottom: 5px;
-    padding: 10px 0px;
+    padding: 10px 5px 10px 0px;
     text-align: right;
     font-weight: 500;
     font-size: 1.5em;
     font-family: "Montserrat";
+    color: rgba(0, 0, 0, 0.842);
 }
 
 div.buttons{
@@ -60,10 +66,10 @@ button, div.buttons > input {
 
 button:hover , div.buttons > input:hover {
     background-color: #d8d8c0;
-    color: black;
+    color: rgba(0, 0, 0, 0.842);
 }
 
 button:active, div.buttons > input:active {
-    background-color: rgba(0, 0, 0, 0.589);
-    color: #e4e4e4;
+    border: 2px solid rgba(243, 243, 243, 0.664);
+    color: rgba(0, 0, 0, 0.842);
 }
